@@ -134,12 +134,12 @@ def main():
     else:
       SendText(client_sock, 'Unknown command %s' % command)
 
-  SendText(client_sock, result)
+    SendText(client_sock, result)
 
     # We're done with the client, so clean up the socket.
 
     #################################
-  client_sock.close()
+    client_sock.close()
     #################################
 
 
